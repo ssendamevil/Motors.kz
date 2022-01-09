@@ -1,0 +1,14 @@
+body {margin-right: 450px;
+    margin-left: 450px;}
+h1 {text-align: justify;
+    font-family: 'Times New Roman', Times, serif}
+h4 {font-family: 'Times New Roman', Times, serif}
+hr {border: white;
+    color: white;
+    background-color: white;}
+p {font-family: 'Times New Roman', Times, serif;
+   font-size: 115%;
+   text-align: justify;
+   line-height: 1.2;}
+img {width: 787px;
+     height: 450px;}

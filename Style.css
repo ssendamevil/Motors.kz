@@ -1,0 +1,267 @@
+.site{
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    background-color: white;
+    position: relative;
+}
+
+body{
+    margin: auto;
+}
+
+section{
+    display: inline-block;
+    margin-bottom: 75px;
+}
+
+.menu-panel{
+    background-color: black;
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+
+.menu-panel-nav{
+    background-color: cadetblue;
+    width:70%;
+    float: left;
+}
+
+.bar{
+    display: flex;
+    background-color: #000;
+    padding: 0px;
+}
+
+.menu-panel li{
+    float: left;
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    border-right:d solid 2px;
+}
+
+.menu-panel a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+
+.menu-panel-nav:before,
+.menu-panel-nav:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+
+.bar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.bar:before, 
+.bar:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 0;
+  top: 8px;
+  transform: rotate(360deg);
+  z-index: -1;
+}
+.bar:before {
+  left: -30px;
+  border-left: 12px solid rgba(255, 255, 255, 0);
+}
+.bar:after {
+  right: -30px;
+  border-right: 12px solid rgba(255, 255, 255, 0);
+}
+
+.bar a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 14.5px 30px;
+  font-family: sans-serif;
+  color: white;
+}
+.bar a.current,
+.bar a:hover {background: darkorange;}
+@media (max-width: 680px) {
+.menu-panel-nav {margin: 0px;}
+.bar li {
+  display: block;
+  margin-right: 0;
+}
+.bar:before, 
+.bar:after {content: none;}
+.bar a {display: block;}
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    }
+    .searchTerm {
+    width: 100%;
+    border: 3px solid darkorange;
+    border-right: none;
+    padding: 5px;
+    height: 24px;
+    border-radius: 0;
+    outline: none;
+    }
+    .searchTerm:focus{
+    color:orange;
+    }
+    .searchButton {
+    width: 53px;
+    height: 40px;
+    border: 1px solid darkorange;
+    background: darkorange;
+    text-align: center;
+    color: #eeeeee;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 20px;
+    }
+    .wrap{
+    width: 29.6%;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    display: inline-block;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    }
+
+
+a{
+    text-decoration: none;
+    color:white;
+    text-shadow: 0 1px 1px rgb(0 0 0 / 50%);
+}
+
+.imglinka img{
+    margin-bottom: -4px;
+}
+
+.article .newspanel1-big img,
+.article .newspanel1-small img{
+    width: 100%;
+}
+
+.article .newspanel1-small img{
+    max-height: 224px;
+    height: 100%;
+}
+
+.article .newspanel1-big{
+    width: 49.87%;
+    float: left;
+    margin-bottom: 3px;
+}
+
+.article .newspanel1-big:first-child{
+    margin-right: 3px;
+}
+
+.article .newspanel1-small{
+    width: 33.157%;
+    float: left;
+    margin-right: 3px;
+}
+
+.article .newspanel1-small:last-child{
+    margin-right: 0px;
+}
+
+.newspanel1-big,.newspanel1-small{
+    position: relative;
+}
+
+.title{
+    position: absolute;
+    width:100%;
+    left: 10px;
+}
+
+.newspanel1-big .title{
+    top: 75%
+}
+.newspanel1-small .title{
+    top: 45%;
+}
+.News,.article,.fnews{
+    display: inline-block;
+}
+
+.onews{
+    width: 25%;
+    float:left;
+}
+
+.newstable{
+    margin-left: 10px;
+    border-bottom:black solid 2px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.newstable h4{
+    padding: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-bottom: 3px;
+}
+
+.newstable a{
+    background:#000;
+    padding: 3px 10px;
+}
+
+.newspanel2{
+    margin: 10px;
+    margin-top: 0px;
+}
+
+.newspanel2 img{
+    width: 100%;
+    height: 170px;
+    max-height: 100%;
+}
+
+.title-s .text{
+    margin-block-end: 0em;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.text a{
+    color: black;
+}
+
+.fa-search::before{
+    content: "\f002";
+}
+
+.logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imglogo{
+    max-width: 100%;
+    width: 164px;
+    height: 150px;
+}
